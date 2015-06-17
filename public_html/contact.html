@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php 
+	$title = "Contact us | Rocket Mail Merge";
+	$description = "Contact the team at Rocket Mail Merge. We're always happy to help.";
+	$bg    = "bg";
+	include "header.php"; 
+?>
+<script type="text/javascript">
+function validateForm()
+	{		
+		var flag = 0;
+		if ( document.form2.firstName.value == "Name" )	{
+			alert ( "Please enter your name" );
+			document.form2.firstName.focus();
+			flag = 1;
+			return false;				
+		}
+ 
+		if ( document.form2.useremail.value == "Email" ) {
+			alert ( "Please enter your email address" );
+			document.form2.useremail.focus();
+			flag = 1;
+			return false;      
+		} else {
+			var reg = /^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$/;
+			var emailVali = document.form2.useremail.value;
+			if(reg.test(emailVali) == false) {
+				alert('Invalid Email Address');
+				document.form2.useremail.focus();
+				flag = 1;
+				return false;
+			}
+		}
+
+		if ( document.form2.message.value == "Message" ) {
+			alert ( "Please enter Message" );
+			document.form2.message.focus();
+			flag = 1;
+			return false;				
+		}
+			
+	}
+</script>
+
+<!--Contact Top Start Here -->
+<div id="contact">
+<div id="contact_form_left">
+<?php if (isset($_POST['submit'])) { ?>
+	<h1>Thank You!<br> We will contact you shortly</h1>
+<?php } else { ?>
+	<h1>Send us a message</h1>
+	<form action="contact.html" method="post" name="form2" id="form2" onsubmit="return validateForm(this);" >
+
+	<input name="firstName" id="firstName" type="text" value="Name" class="contact_name"  />
+	<input name="useremail" id="useremail" type="text" value="Email" class="contact_email"  />
+	<textarea name="message" id="message" class="contact_textarea" rows="" cols="" >Message</textarea>
+	<input name="submit" type="submit" value="" />
+	</form>
+<?php } ?>
+
+</div>
+<div class="contact_form_line"> <img src="images/contact_form_line.png" alt=""  /> </div>
+<div id="contact_form_right">
+<h2>Email us</h2>
+<a href="mailto:support@rocketmailmerge.com"><h6>support@rocketmailmerge.com</h6></a>
+<p>We do our level best to answer all emails within 24 hours. All questions are answered by our lead engineer. Your business is too important to trust to a call center.</p>
+</div>
+</div>
+<!--Contact Top End Here -->
+</div>
+</div>
+</div>
+</div>
+<!--Header End Here-->
+
+<!--Wrapper Start Here-->
+<div id="wrapper">
+<!--Main Contant Start Here-->
+<div id="main_contant">
+<div class="center_frame">
+<!--Contact Page Address Start Here-->
+<div id="contact_address">
+<h2>Address of Rocket Mail Merge</h2>
+<div class="address_powerhouse"> <img src="images/contact_page_map.png" alt="" class="address_powerhouse_img" />
+<h5>Send us a letter</h5>
+<span>Axle Technologies<br />
+PO Box 15640, City East, 4002, Qld  Australia</span> <a href="https://maps.google.com.au/?ll=-27.472562,153.026419&spn=0.038266,0.066047&t=m&z=15"></a> </div>
+</div>
+<!--Contact Page Address End Here-->
+</div>
+</div>
+<!-- Main Contant End Here -->
+</div>
+<?php include "footer.php"; ?>
+</body>
+</html>
+
+<?php
+	if (isset($_POST['submit'])) {
+
+		//edit the email where you want the form submissions to go
+		 $to = "leon@rocketmailmerge.com";
+		//edit the email where you want to form submissions to go from.
+		 $from = "website@rocketmailmerge.com";
+
+		 $subject = 'Details';
+
+
+		 $message = '
+					<table width="372" cellpadding="0" cellspacing="0">
+					<tr><td colspan="2" align="Center" style="padding-left:60px; padding-bottom:20px;"><h4> Details</h4></td></tr> 
+					<tr>
+					<td width="62%" height="20" style="padding:0 20px 0 20px;" align="right"><b>Name : </b></td><td>'.$_POST['firstName'].'</td>
+					</tr>
+					<tr>
+					<td width="62%" height="20" style="padding:0 20px 0 20px;" align="right"><b>Email :</b> </td><td>'.$_POST['useremail'].'</td>
+					</tr>
+
+
+					<tr>
+					<td width="62%" height="20" style="padding:0 20px 0 20px;" align="right"><b>Message : </b></td><td>&nbsp;</td>
+					</tr>
+					<tr>
+					<td width="62%" height="15" style="padding:0 20px 0 20px;" align="right"> </td> <td  >'.$_POST['message'].'</td>
+					</tr>
+					</table>';
+
+		// Additional headers
+		$headers  = 'MIME-Version: 1.0' . "\r\n";
+		$headers .= 'From: '.$from . "\n";
+		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	
+		if (strpos($message,'keyword') !== false) {
+		return;
+		    }
+		if (strpos($message,'traffic') !== false) {
+		return;
+		    }
+
+		mail($to,$subject,$message,$headers) ;
+		
+	} 
+?>

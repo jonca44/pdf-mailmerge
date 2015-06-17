@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<?php 
+	$title = "Login | Rocket Mail Merge";
+	$description = "Login to Rocket Mail Merge, the easiest way to create beautiful mail merges quickly on the net.";
+	$bg    = "bg";
+	include "header.php"; 
+?>
+        
+        <!--Project Top Start Here -->
+        <div id="login_detail">
+          <form id="form2" action="https://app.rocketmailmerge.com/php/checklogin.php" method="post">
+            <h6>Login</h6>
+            <input type="text"     name="username" value="Email Address or Username"  class="input_1" />
+            <input type="password" name="password" value="" placeholder="Password" class="input_2"  />
+            <input type="submit" name="submit" value=""  />
+            <a href="#" class="forget">Forgot password?</a> <a href="https://app.rocketmailmerge.com/account/register.html" class="not_yet">Not yet registered?</a>
+          </form>
+        </div>
+        <!--Project Top Start Here --> 
+      </div>
+    </div>
+  </div>
+</div>
+<!--Header End Here--> 
+<!--slider start here--> 
+
+<!--Wrapper Start Here-->
+<div id="wrapper"><!--Top Wrapper End Here--> 
+  <!--Main Contant Start Here-->
+  <div id="main_contant">
+    <div class="center_frame"></div>
+  </div>
+  <!-- Main Contant End Here --> 
+</div>
+<?php include "footer.php"; ?>
+<script type="text/javascript" src="js/formly.min.js"></script>
+<link rel="stylesheet" href="css/formly.min.css" type="text/css" />
+<script>
+	//This function is for checking for password validity.
+	function getQueryParams(qs) {
+		qs = qs.split("+").join(" ");
+		var params = {},
+			tokens,
+			re = /[?&]?([^=]+)=([^&]*)/g;
+
+		while (tokens = re.exec(qs)) {
+				params[decodeURIComponent(tokens[1])]
+				 = decodeURIComponent(tokens[2]);
+		}
+
+		return params;
+	}
+
+	
+	var $_GET = getQueryParams(document.location.search);
+
+    if($_GET['pw'] == '0')
+		alert("Sorry, your username or password was incorrect. Please try again.");
+</script>
+</body>
+</html>

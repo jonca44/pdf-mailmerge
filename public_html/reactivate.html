@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php 
+	$title = "Create Mail Merges easily for free online | Rocket Mail Merge";
+	$description = "Register for a free account at Rocket Mail Merge today. You can create beautiful Mail Merges online in no time.";
+	$bg    = "bg";
+	include "header.php"; 
+	include "../app/php/reactivate_account.php"; 
+	
+	//echo "<pre>";	
+	//print_r($server->outData);  
+?>
+<script type="text/javascript" src="js/formly.min.js"></script>
+<link rel="stylesheet" href="css/formly.min.css" type="text/css" />
+<script type="text/javascript">
+function validateForm()
+	{		
+		var flag = 0;
+		/*if ( document.form2.username.value == "Username" )	{
+			alert ( "Please enter your username" );
+			document.form2.username.focus();
+			flag = 1;
+			return false;				
+		}*/
+		 
+		if ( document.form2.number.value == "Card Number" )	{
+			alert ( "Please enter your Credit Card Number" );
+			document.form2.number.focus();
+			flag = 1;
+			return false;				
+		}	
+		
+		if ( document.form2.cardName.value == "Card Name" )	{
+			alert ( "Please enter your Credit Card Name" );
+			document.form2.cardName.focus();
+			flag = 1;
+			return false;				
+		}	
+		
+		if ( document.form2.cvv.value == "Security Code" )	{
+			alert ( "Please enter your Credit Card Securtiy Code. This is a 3 digit number on the back of your card." );
+			document.form2.cvv.focus();
+			flag = 1;
+			return false;				
+		}	
+		
+		if ( document.form2.billingZip.value == "Billing Zip Code" )	{
+			alert ( "Please enter your Credit Card Billing zip Code." );
+			document.form2.billingZip.focus();
+			flag = 1;
+			return false;				
+		}
+		
+		
+	}
+	
+	//This function is for checking for password validity.
+	function getQueryParams(qs) {
+		qs = qs.split("+").join(" ");
+		var params = {},
+			tokens,
+			re = /[?&]?([^=]+)=([^&]*)/g;
+
+		while (tokens = re.exec(qs)) {
+				params[decodeURIComponent(tokens[1])]
+				 = decodeURIComponent(tokens[2]);
+		}
+
+		return params;
+	}
+
+	
+	var $_GET = getQueryParams(document.location.search);
+
+    if($_GET['crd'] == '0')
+		alert("Sorry, your credit card was declined. Please check your details and try again.");
+
+	$(document).ready(function() { 
+		$('#form2').formly(); 
+	});
+</script>        
+
+
+        <!--Project Top Start Here --> 
+        <!--CHANGE ONLY UPERE PART IN INNER PAGES--> 
+      </div>
+    </div>
+  </div>
+</div>
+<!--Header End Here--> 
+<!--slider start here--> 
+
+<style>
+	#logo_nav .bg {
+		height: 120px !important;
+	}
+</style>
+
+<!--Wrapper Start Here-->
+<div id="wrapper"><!--Top Wrapper End Here--> 
+  <!--Main Contant Start Here-->
+  <div id="main_contant">
+    <div class="center_frame">
+		<!--Project Top Start Here -->
+        <div id="register_details" style="margin-bottom:30px;">
+			<br/>
+			<?php 
+				if(!isset($server->outData['data'])) {
+					?>
+						<h6 style="float: left;
+						width: 100%;
+						text-align: center;
+						font-size: 47px;
+						color: #000;
+						font-family: 'existence_lightregular';">Whoops, seems you've taken a wrong turn.</h6>
+					<?php
+					die();
+				}
+			?>
+			<h6 style="float: left;
+						width: 100%;
+						text-align: center;
+						font-size: 47px;
+						color: #000;
+						font-family: 'existence_lightregular';">Reactivate Your Account in 1 Quick Step</h6>
+						<br/><br/>
+						<h3 style="margin-top: 30px; text-align: center;">Please enter your credit card details to reactivate your account.</h3>
+
+          <form action="https://app.rocketmailmerge.com/php/reactivate_account.php" method="post" name="form2" id="form2" onsubmit="return validateForm(this);" > 
+			
+			<label>Your Existing Account Details</label>
+			<hr>
+			<input type="hidden" name="rex"      value="woof">
+			<input type="hidden" name="token"      value="<?=$server->outData['data']['chargebee_id']?>">
+			<?php if(isset($_GET['plan']) && is_numeric($_GET['plan'])) { ?>
+				<input type="hidden" name="plan" value="<?=$_GET['plan']?>">
+			<?php } ?><br/>
+			Username
+			<input type="text"   name="username" disabled value="<?=$server->outData['data']['username']?>" class="input_1" style="margin-bottom:30px;" /><br/>
+			<label>1. Credit Card Details</label>
+			<hr>
+			Card Number: <input type="text"   name="number" value="Card Number"  required  maxlength="19" style="margin-left: 25px;" class="" /> <img alt="Secured using the same technology your bank uses.  We never see this." src="images/lock.png" title="Secured using the same technology your bank uses.  We never see this."><br/>
+			Card Name: <input type="text"   name="cardName" value="Card Name"   required  style="margin-left: 40px;" class="" /><br/>
+			Security code: <input type="text"   name="cvv" value="Security Code"  required  maxlength="4" style="margin-left: 25px;" class="" /><br/>
+			Expiration Date: <select name="expiryMonth" value="expiryMonth"  style="margin-left: 13px;" class="">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option></select>
+							
+							<select name="expiryYear" value="expiryYear"  class="">
+								<option value="2014">2014</option>
+								<option value="2015">2015</option>
+								<option value="2016">2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+								<option value="2021">2021</option></select><br/>
+			Billing Zip Code: <input type="text"   name="billingZip" required value="Billing Zip Code"  class="" /><br/>
+			
+            <input type="submit" name="submit" value="" class="register_img reactivate" style="margin-bottom:15px;" />
+			 
+			<br/>
+			
+			<p><b>Thanks for reactivating your account.</b></p>
+				You will be charged $12 once per month. There are no contracts and you can cancel your use of Rocket Mail Merge at any time.</p>
+          </form>
+		  <br/>
+        </div>
+	</div>
+  </div>
+  <!-- Main Contant End Here --> 
+</div>
+<!--Wrapper End Here-->
+<?php include "footer.php"; ?>
+</body>
+</html>

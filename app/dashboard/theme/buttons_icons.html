@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Dreamworks - Responsive admin template</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<!--Stylesheets-->
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/typography.css" />
+<link rel="stylesheet" href="css/tipsy.css" />
+<link rel="stylesheet" href="js/cl_editor/jquery.cleditor.css" />
+<link rel="stylesheet" href="uploadify/uploadify.css" />
+<link rel="stylesheet" href="css/jquery.ui.all.css" />
+<link rel="stylesheet" href="css/fullcalendar.css" />
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="js/jq_tables/demo_table_jui.css" />
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" />
+<link rel="stylesheet" href="css/highlight.css" />
+<!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+<!--Javascript-->
+<script type="text/javascript" src="js/jquery.min.js"> </script>
+<script type="text/javascript" src="js/excanvas.js"> </script>
+<script type="text/javascript" src="js/jquery.flot.js"> </script>
+<script type="text/javascript" src="js/jquery.flot.stack.js"> </script>
+<script type="text/javascript" src="js/jquery.flot.pie.js"> </script>
+<script type="text/javascript" src="js/jquery.quicksand.js"> </script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"> </script>
+<script type="text/javascript" src="js/jquery.tipsy.js"> </script>
+<script type="text/javascript" src="js/cl_editor/jquery.cleditor.min.js"> </script>
+<script type="text/javascript" src="uploadify/swfobject.js"></script>
+<script type="text/javascript" src="uploadify/jquery.uploadify.v2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.autogrowtextarea.js"></script>
+<script type="text/javascript" src="js/form_elements.js"></script>
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="js/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+<script type="text/javascript" src="js/jquery.ui.progressbar.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="js/jquery.ui.tabs.js"></script>
+<script type="text/javascript" src="js/fullcalendar.js"></script>
+<script type="text/javascript" src="js/gcal.js"></script>
+<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/highlight.js"></script>
+<script type="text/javascript" src="js/jq_tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/main.js"> </script>
+</head>
+<body>
+<!--Header-->
+<header>
+    <!--Logo-->
+    <div id="logo"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+    <!--Search-->
+    <div class="header_search">
+        <form action="">
+            <input type="text" name="search" placeholder="Search" id="ac">
+            <input type="submit" value="">
+        </form>
+    </div>
+</header>
+<!--Dreamworks Container-->
+<div id="dreamworks_container">
+    <!--Primary Navigation-->
+    <nav id="primary_nav">
+    <ul>
+        <li class="nav_dashboard"><a href="index.html">Dashboard</a></li>
+        <li class="nav_graphs"><a href="charts.html">Graphs</a></li>
+        <li class="nav_forms"><a href="forms.html">Forms</a></li>
+        <li class="nav_typography"><a href="typography.html">Typography</a></li>
+        <li class="nav_uielements active"><a href="ui_elements.html">UI Elements</a></li>
+        <li class="nav_pages"><a href="pages.html">Pages</a></li>
+    </ul>
+    </nav>
+    <!--Main Content-->
+    <section id="main_content">
+        <!--Secondary Navigation-->
+        <nav id="secondary_nav">
+            <!--UserInfo-->
+            <dl class="user_info">
+                <dt><a href="#"><img src="images/avatar.png" alt="" /></a></dt>
+                <dd> <a class="welcome_user" href="#">Welcome,<strong>John Doe</strong></a> <span class="log_data">Last sign in : 16:11 Feb 27th 2012</span> <a class="logout" href="login.html">Logout</a> <a class="user_messages" href="#"><span>12</span></a>
+    </dd>
+</dl><!--Responsive Nav-->
+    <a class="res_icon" href="#"></a>
+    <ul id="responsive_nav">
+    	<li>
+        	<a href="index.html">Dashboard</a>
+        </li>
+        <li>
+        	<a href="charts.html">Graphs</a>
+            <ul>
+            	<li><a href="charts.html">Lines Chart</a></li>
+                <li><a href="charts_bar.html">Bars Chart</a></li>
+                <li><a href="charts_pie.html">Pie Chart</a></li>
+            </ul>
+        </li>
+        <li>
+        	<a href="forms.html">Forms</a>
+            <ul>
+            	<li><a href="forms.html">Form elements</a></li>
+                <li><a href="editor_upload.html">WYSIWYG / Uploader</a></li>
+            </ul>
+        </li>
+        <li>
+       	 	<a href="typography.html">Typography</a>
+            <ul>
+            	<li><a href="typography.html">Typography</a></li>
+                <li><a href="grid.html">Grid</a></li>
+            </ul>            
+        </li>
+        <li>
+        	<a href="ui_elements.html">UI Elements</a>
+            <ul>
+            	<li><a href="ui_elements.html">Miscellaneous</a></li>
+                <li><a href="buttons_icons.html">Buttons & Icons</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="data_table.html">Tables</a></li>
+                <li><a href="modal_window.html">Modal Windows</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>            
+        </li>
+        <li>
+       		<a href="pages.html">pages</a>
+            <ul>
+            	<li><a href="offline.html">Site offline</a></li>
+                <li><a href="404.html">404 page</a></li>
+                <li><a href="405.html">405 page</a></li>
+                <li><a href="500.html">500 page</a></li>
+            </ul>              
+        </li>
+    </ul>
+<!--Responsive Nav ends--><h2>UI Elements</h2>
+            <ul>
+                <li><a href="ui_elements.html"><span class="iconsweet">C</span>Miscellaneous</a></li>
+                <li class="active"><a href="#"><span class="iconsweet">(</span>Buttons & Icons</a></li>
+                <li><a href="calendar.html"><span class="iconsweet">R</span>Calendar</a></li>
+                <li><a href="data_table.html"><span class="iconsweet">s</span>Tables</a></li>
+                <li><a href="modal_window.html"><span class="iconsweet">K</span>Modal Windows</a></li>
+                <li><a href="gallery.html"><span class="iconsweet">2</span>Gallery</a></li>            
+            </ul>
+        </nav>
+        <!--Content Wrap-->
+        <div id="content_wrap">	<!--Activity Stats-->
+    	<div id="activity_stats">
+        	<h3>Activity</h3>
+            <div class="activity_column">
+            	<span class="iconsweet">+</span> <span class="big_txt rd_txt">12</span>Added
+            </div>
+            <div class="activity_column">
+            	<span class="iconsweet">Y</span> <span class="big_txt gr_txt">6</span>Flagged
+            </div>
+            <div class="activity_column">
+            	<span class="iconsweet">#</span> <span class="big_txt">2</span>Answer pending
+            </div>                         
+        </div>                  
+        <!--Quick Actions-->
+        <div id="quick_actions">
+        	<a class="button_big" href="#"><span class="iconsweet">+</span>Add new Project</a>
+            <a class="button_big" href="#"><span class="iconsweet">w</span>Export Report</a>
+            <a class="button_big btn_grey" href="#"><span class="iconsweet">f</span>Manage Projects</a>
+        </div>
+<!--One_TWO-->
+            <div class="one_two_wrap fl_left">
+                 
+            <!--Buttons--> 
+            <div class="widget">
+                    <div class="widget_title"><span class="iconsweet">i</span><h5>Buttons</h5></div>
+                    <div class="widget_body">
+                        <div class="content_pad text_center">
+                            <a style="margin:5px;" class="greyishBtn button_small" href="#">Button Grey</a>
+                            <a style="margin:5px;" class="whitishBtn button_small" href="#">Button White</a>
+                            <a style="margin:5px;" class="bluishBtn button_small" href="#">Button Blue</a>
+                            <a style="margin:5px;" class="redishBtn button_small" href="#">Button Red</a>
+                            <a style="margin:5px;" class="greenishBtn button_small" href="#">Button Green</a> 
+                            <a style="margin:5px;" class="magentaBtn button_small" href="#">Button Magenta</a> 
+                            <a style="margin:5px;" class="yellowBtn button_small" href="#">Button Yellow</a> 
+                            <a style="margin:5px;" class="dblueBtn button_small" href="#">Button Dark</a>            
+                    	</div>
+               		</div>
+            </div>                                         
+                               
+        </div>
+            <!--One_TWO-->
+            <div class="one_two_wrap fl_right">
+            	<!--Bottom bar--> 
+                <div class="widget">
+                    <div class="widget_title"><span class="iconsweet">W</span><h5>Bottom bar</h5></div>
+                    <div class="widget_body">
+                        <div class="content_pad">                        	
+                           <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Nisl ut aliquip ex ea commodo consequat. </p>
+                    	</div>
+                        <div class="action_bar">
+                            <a href="#" class="button_small whitishBtn"><span class="iconsweet">l</span>Export</a>
+                            <a href="#" class="button_small whitishBtn"><span class="iconsweet">v</span>Print</a>
+                            <a href="#" class="button_small bluishBtn fl_right"><span class="iconsweet">=</span>Save</a>
+                        </div>
+               		</div>
+            	</div>                
+            </div>  
+            <!--One_Wrap-->
+            <div class="one_wrap">
+            	<!--Buttons with Iconsweet--> 
+                <div class="widget">
+                    <div class="widget_title"><span class="iconsweet">?</span><h5>Buttons with Icon Sweet</h5></div>
+                    <div class="widget_body">
+                        <div class="content_pad">                        	
+							<a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">`</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">~</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">1</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">!</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">2</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">@</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">3</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">#</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">4</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">$</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">5</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">%</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">6</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">^</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">7</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">&</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">8</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">*</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">9</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">(</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">0</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">)</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">-</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">_</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">=</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">+</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">\</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">|</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">q</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">w</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">e</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">r</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">t</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">y</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">u</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">i</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">o</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">p</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">[</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">{</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">]</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">}</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">a</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">s</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">d</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">f</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">g</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">H</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">j</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">k</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">l</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">;</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">:</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">'</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">"</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">z</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">x</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">c</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">v</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">b</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">n</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">m</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">,</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet"><</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">.</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">></span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">/</span>Button</a>
+                            <a style="margin:5px;" class="button_small whitishBtn"><span class="iconsweet">?</span>Button</a>                                                       
+                    	</div>
+               		</div>
+            	</div>                         
+            </div>                  
+            <br class="clear" />
+        </div>
+    </section>
+</div>
+</body>
+</html>

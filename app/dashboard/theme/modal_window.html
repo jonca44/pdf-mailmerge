@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Dreamworks - Responsive admin template</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<!--Stylesheets-->
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/typography.css" />
+<link rel="stylesheet" href="css/tipsy.css" />
+<link rel="stylesheet" href="js/cl_editor/jquery.cleditor.css" />
+<link rel="stylesheet" href="uploadify/uploadify.css" />
+<link rel="stylesheet" href="css/jquery.ui.all.css" />
+<link rel="stylesheet" href="css/fullcalendar.css" />
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="js/jq_tables/demo_table_jui.css" />
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" />
+<link rel="stylesheet" href="css/highlight.css" />
+<!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+<!--Javascript-->
+<script type="text/javascript" src="js/jquery.min.js"> </script>
+<script type="text/javascript" src="js/excanvas.js"> </script>
+<script type="text/javascript" src="js/jquery.flot.js"> </script>
+<script type="text/javascript" src="js/jquery.flot.stack.js"> </script>
+<script type="text/javascript" src="js/jquery.flot.pie.js"> </script>
+<script type="text/javascript" src="js/jquery.quicksand.js"> </script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"> </script>
+<script type="text/javascript" src="js/jquery.tipsy.js"> </script>
+<script type="text/javascript" src="js/cl_editor/jquery.cleditor.min.js"> </script>
+<script type="text/javascript" src="uploadify/swfobject.js"></script>
+<script type="text/javascript" src="uploadify/jquery.uploadify.v2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.autogrowtextarea.js"></script>
+<script type="text/javascript" src="js/form_elements.js"></script>
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="js/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+<script type="text/javascript" src="js/jquery.ui.progressbar.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="js/jquery.ui.tabs.js"></script>
+<script type="text/javascript" src="js/fullcalendar.js"></script>
+<script type="text/javascript" src="js/gcal.js"></script>
+<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/highlight.js"></script>
+<script type="text/javascript" src="js/jq_tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/main.js"> </script>
+</head>
+<body>
+<!--Header-->
+<header>
+    <!--Logo-->
+    <div id="logo"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+    <!--Search-->
+    <div class="header_search">
+        <form action="">
+            <input type="text" name="search" placeholder="Search" id="ac">
+            <input type="submit" value="">
+        </form>
+    </div>
+</header>
+<!--Dreamworks Container-->
+<div id="dreamworks_container">
+    <!--Primary Navigation-->
+    <nav id="primary_nav">
+        <ul>
+            <li class="nav_dashboard"><a href="index.html">Dashboard</a></li>
+            <li class="nav_graphs"><a href="charts.html">Graphs</a></li>
+            <li class="nav_forms"><a href="forms.html">Forms</a></li>
+            <li class="nav_typography"><a href="typography.html">Typography</a></li>
+            <li class="nav_uielements active"><a href="ui_elements.html">UI Elements</a></li>
+            <li class="nav_pages"><a href="pages.html">Pages</a></li>
+        </ul>
+    </nav>
+    <!--Main Content-->
+    <section id="main_content">
+        <!--Secondary Navigation-->
+        <nav id="secondary_nav">
+            <!--UserInfo-->
+            <dl class="user_info">
+                <dt><a href="#"><img src="images/avatar.png" alt="" /></a></dt>
+                <dd> <a class="welcome_user" href="#">Welcome,<strong>John Doe</strong></a> <span class="log_data">Last sign in : 16:11 Feb 27th 2012</span> <a class="logout" href="login.html">Logout</a> <a class="user_messages" href="#"><span>12</span></a>
+    </dd>
+</dl><!--Responsive Nav-->
+    <a class="res_icon" href="#"></a>
+    <ul id="responsive_nav">
+    	<li>
+        	<a href="index.html">Dashboard</a>
+        </li>
+        <li>
+        	<a href="charts.html">Graphs</a>
+            <ul>
+            	<li><a href="charts.html">Lines Chart</a></li>
+                <li><a href="charts_bar.html">Bars Chart</a></li>
+                <li><a href="charts_pie.html">Pie Chart</a></li>
+            </ul>
+        </li>
+        <li>
+        	<a href="forms.html">Forms</a>
+            <ul>
+            	<li><a href="forms.html">Form elements</a></li>
+                <li><a href="editor_upload.html">WYSIWYG / Uploader</a></li>
+            </ul>
+        </li>
+        <li>
+       	 	<a href="typography.html">Typography</a>
+            <ul>
+            	<li><a href="typography.html">Typography</a></li>
+                <li><a href="grid.html">Grid</a></li>
+            </ul>            
+        </li>
+        <li>
+        	<a href="ui_elements.html">UI Elements</a>
+            <ul>
+            	<li><a href="ui_elements.html">Miscellaneous</a></li>
+                <li><a href="buttons_icons.html">Buttons & Icons</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="data_table.html">Tables</a></li>
+                <li><a href="modal_window.html">Modal Windows</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>            
+        </li>
+        <li>
+       		<a href="pages.html">pages</a>
+            <ul>
+            	<li><a href="offline.html">Site offline</a></li>
+                <li><a href="404.html">404 page</a></li>
+                <li><a href="405.html">405 page</a></li>
+                <li><a href="500.html">500 page</a></li>
+            </ul>              
+        </li>
+    </ul>
+<!--Responsive Nav ends--><h2>UI Elements</h2>
+            <ul>
+                <li><a href="ui_elements.html"><span class="iconsweet">C</span>Miscellaneous</a></li>
+                <li><a href="buttons_icons.html"><span class="iconsweet">(</span>Buttons & Icons</a></li>
+                <li><a href="calendar.html"><span class="iconsweet">R</span>Calendar</a></li>
+                <li><a href="data_table.html"><span class="iconsweet">s</span>Tables</a></li>
+                <li class="active"><a href="#"><span class="iconsweet">K</span>Modal Windows</a></li>
+                <li><a href="gallery.html"><span class="iconsweet">2</span>Gallery</a></li>            
+            </ul>
+        </nav>
+        <!--Content Wrap-->
+        <div id="content_wrap">	<!--Activity Stats-->
+    	<div id="activity_stats">
+        	<h3>Activity</h3>
+            <div class="activity_column">
+            	<span class="iconsweet">+</span> <span class="big_txt rd_txt">12</span>Added
+            </div>
+            <div class="activity_column">
+            	<span class="iconsweet">Y</span> <span class="big_txt gr_txt">6</span>Flagged
+            </div>
+            <div class="activity_column">
+            	<span class="iconsweet">#</span> <span class="big_txt">2</span>Answer pending
+            </div>                         
+        </div>                  
+        <!--Quick Actions-->
+        <div id="quick_actions">
+        	<a class="button_big" href="#"><span class="iconsweet">+</span>Add new Project</a>
+            <a class="button_big" href="#"><span class="iconsweet">w</span>Export Report</a>
+            <a class="button_big btn_grey" href="#"><span class="iconsweet">f</span>Manage Projects</a>
+        </div>
+<!--One_Wrap-->
+            <div class="one_wrap">
+            	<!--Modal Window--> 
+                <div class="widget">
+                    <div class="widget_title"><span class="iconsweet">K</span><h5>Modal Windows</h5></div>
+                    <div class="widget_body">
+                        <div class="content_pad">      
+                        	<a class="whitishBtn button_small" data-toggle="modal" href="#myModal" >Launch Basic Modal</a> 
+                            <a class="whitishBtn button_small" data-toggle="modal" href="#myModal2" >Launch Modal With Data Table</a>                 	                                             
+                    	</div>
+               		</div>
+            	</div>                         
+            </div>                  
+            <br class="clear" />
+        </div>
+    </section>
+</div>
+	<!--Basic Modal Start-->
+	<div class="modal hide" id="myModal" >
+    <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Modal header</h3>
+    </div>
+    <div class="modal-body">
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    </div>
+    <div class="modal-footer">
+    <a data-dismiss="modal" class="greyishBtn button_small" href="#">Close</a>
+    <a href="#" class="bluishBtn button_small">Save changes</a>
+    </div>
+    </div>
+    <!--Basic Modal End-->
+    <!--Modal Table Start-->
+    <div class="modal hide" id="myModal2" >
+    <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Manage Projects</h3>
+    </div>
+    <div class="modal-body">
+            <table class="activity_datatable" width="100%" border="0" cellspacing="0" cellpadding="8">
+                                <tr>
+                                    <th width="8%">ID</th>
+                                    <th width="15%">Category</th>
+                                    <th width="52%">Project(s)</th>
+                                    <th width="25%">Actions</th>
+                                </tr>
+                                <tr>
+                                    <td>4923</td>
+                                    <td><span class="green_highlight pj_cat">Android</span></td>
+                                    <td><a href="title">Eodem modo typi, qui nunc nobi...</a></td>
+                                    <td><span class="data_actions iconsweet"><a class="tip_north" original-title="User" href="#">a</a> <a class="tip_north" original-title="Edit" href="#">C</a> 						<a class="tip_north" original-title="Delete" href="#">X</a></span></td>
+                                </tr>
+                                <tr>
+                                    <td>3568</td>
+                                    <td><span class="grey_highlight pj_cat">Flex</span></td>
+                                    <td><a href="title">Eodem modo typi, qui nunc nobi...</a></td>
+                                    <td><span class="data_actions iconsweet"><a class="tip_north" original-title="User" href="#">a</a> <a class="tip_north" original-title="Edit" href="#">C</a> 						<a class="tip_north" original-title="Delete" href="#">X</a></span></td>                    </tr>
+                                <tr>
+                                    <td>4923</td>
+                                    <td><span class="green_highlight pj_cat">Android</span></td>
+                                    <td><a href="title">Eodem modo typi, qui nunc nobi...</a></td>
+                                    <td><span class="data_actions iconsweet"><a class="tip_north" original-title="User" href="#">a</a> <a class="tip_north" original-title="Edit" href="#">C</a> 						<a class="tip_north" original-title="Delete" href="#">X</a></span></td>                    </tr>
+                                <tr>
+                                    <td>4929</td>
+                                    <td><span class="blue_highlight pj_cat">JAVA</span></td>
+                                    <td><a href="title">Eodem modo typi, qui nunc nobi...</a></td>
+                                    <td><span class="data_actions iconsweet"><a class="tip_north" original-title="User" href="#">a</a> <a class="tip_north" original-title="Edit" href="#">C</a> 						<a class="tip_north" original-title="Delete" href="#">X</a></span></td>                    </tr>               
+                                <tr>
+                                    <td>3568</td>
+                                    <td><span class="grey_highlight pj_cat">Flex</span></td>
+                                    <td><a href="title">Eodem modo typi, qui nunc nobi...</a></td>
+                                    <td><span class="data_actions iconsweet"><a class="tip_north" original-title="User" href="#">a</a> <a class="tip_north" original-title="Edit" href="#">C</a> 						<a class="tip_north" original-title="Delete" href="#">X</a></span></td>                    </tr>                                                         
+
+                            </table>    </div>
+    <div class="modal-footer">
+    <a data-dismiss="modal" class="greyishBtn button_small" href="#">Close</a>
+    <a href="#" class="bluishBtn button_small">Save changes</a>
+    </div>
+    </div>
+    <!--Modal Table End-->
+</body>
+</html>

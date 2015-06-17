@@ -1,0 +1,15 @@
+# enable symbolic links
+Options +FollowSymLinks -SymLinksIfOwnerMatch
+php_value newrelic.appname "RMM"
+AddType application/x-httpd-php .html
+
+RewriteEngine On 
+#RewriteCond %{SERVER_PORT} 80 
+#RewriteCond %{REQUEST_URI} dashboard|editor|user_files
+#RewriteRule ^(.*)$ https://app.rocketmailmerge.com/$1 [R=301,L]
+
+php_value post_max_size 80M
+php_value upload_max_filesize 80M
+php_value max_input_vars 8000
+php_value suhosin.post.max_vars 8000
+php_value suhosin.request.max_vars 1000

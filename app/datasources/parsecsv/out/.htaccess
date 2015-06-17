@@ -1,0 +1,6 @@
+# prevent viewing of a specific file
+<Files *>
+ order allow,deny
+ deny from all
+</Files>
+ 

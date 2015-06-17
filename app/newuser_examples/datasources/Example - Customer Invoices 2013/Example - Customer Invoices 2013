@@ -1,0 +1,5 @@
+invoiceNum,name,address,suburb,state,postcode,billingPeriod,invoiceIssuedDate,clientNum,billingDetails,thankyouTxt,invoiceAmt,overdueTxt,overdueAmt,GrandTotal
+10454,Simmons and Simmons Lawyers,127 Kingsly Street,Boondal,QLD,4054,01 January - 31 January,15 December 2012,12344,"Rocket Mail Merge - Enterprise - $299
+Extra Pages (6593) - $197.79","From the team at Axle Tech, we thank you for your continued support.",$496.79,Overdue,$165.00,$661.79
+10453,Paws n Claws Vet,16 Rockview Road,Nundah,QLD,4012,01 January - 31 January,15 December 2012,11397,"Rocket Mail Merge - Pro - $29
+Extra Pages (50) - $3","From the team at Axle Tech, we thank you for your continued support.",$32.00,,,$32.00
